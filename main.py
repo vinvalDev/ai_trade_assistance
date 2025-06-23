@@ -24,6 +24,11 @@ BOT_TOKEN = "7910424385:AAHr0HoEyX07tDtL_oLaFSBN24QRQStWT3w"
 
 # Google Sheets setup
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+
+# Write credentials JSON from env variable to file
+with open("google_credentials.json", "w") as f:
+    f.write(os.environ["GOOGLE_CREDENTIALS"])
+
 credentials = Credentials.from_service_account_file("google_credentials.json", scopes=SCOPES)
 gc = gspread.authorize(credentials)
 user_sheets = {}
