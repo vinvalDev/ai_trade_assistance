@@ -20,7 +20,7 @@ logging.basicConfig(level=logging.WARNING)
 logging.getLogger("httpx").setLevel(logging.WARNING)
 
 # Bot token
-BOT_TOKEN = "7910424385:AAHr0HoEyX07tDtL_oLaFSBN24QRQStWT3w"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 # Google Sheets setup
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
