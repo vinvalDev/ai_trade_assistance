@@ -62,5 +62,3 @@ MIT
 
 ---
 
-## 🤖 Demo Screenshot
-Add a screenshot or GIF of `/riskcalc` or `/weeklysummary` here
